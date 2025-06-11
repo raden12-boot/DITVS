@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" 
+     profiles="urn:mpeg:dash:profile:isoff-live:2011"
+     type="static"
+     mediaPresentationDuration="PT10S"
+     minBufferTime="PT1.5S">
+  <Period>
+    <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1">
+      <Representation id="1" bandwidth="563000" width="640" height="360" frameRate="25" codecs="avc1.42e01e">
+        <BaseURL>https://d3b0v7fggu5zwm.cloudfront.net/out/v1/f3df48faafaf4198a65b9763140fce30/index_video_4_0_init.mp4?m=1720515672</BaseURL> 
+        <SegmentBase indexRangeExact="true">
+          <Initialization range="0-681"/>
+        </SegmentBase>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
